@@ -1,102 +1,198 @@
-# Hospital-Management-System
+# 🏥 Hospital Management System  
+### Full Stack Web Application for Healthcare Management
 
-### PURPOSE OF THE PROJECT
+A complete Hospital Management System built using Python and Web Technologies to manage patients, doctors, appointments, and administrative operations efficiently.
 
-The purpose of this project is to computerize the Front Office Management of Hospital by developing a software which is user friendly, simple, fast, and cost– effective. It deals with the collection of patient’s information, diagnosis details, etc.
+---
 
-The Hospital Management System can be entered using a username and password. It is accessible either by an administrator or receptionist. Only they can add data into the database. The data can be retrieved easily. The data are well protected for personal use and makes the data processing very fast.
+## Abstract of the Project
 
-### SOFTWARE REQUIREMENTS FOR THE PROJECT:
+The healthcare industry requires efficient systems to manage patient data, doctor availability, and hospital operations.
 
-* FRONT END: Tkinter
+This project provides a centralized system where:
 
-* SERVER-SIDE SCRIPT: Python
+- Patients can register and book appointments  
+- Doctors can manage schedules and view patient details  
+- Admin can monitor overall hospital activities  
 
-* DATABASE: Sqlite (DBrowser)
+The system ensures better data organization, faster access, and improved healthcare service delivery.
 
-### RESULTS  
+---
 
-#### Login window
-*	If username and password are valid.
+## Objectives
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/login-1.jpg?raw=true.type" width="600" height="400">
+- Digitize hospital management processes  
+- Manage patient records efficiently  
+- Enable doctor-patient interaction  
+- Improve hospital workflow and data tracking  
+
+---
+
+## System Modules
+
+### Admin Module
+- Manage doctors  
+- View all patients  
+- Monitor appointments  
+- System overview dashboard  
+
+---
+
+### Doctor Module
+- View assigned patients  
+- Update patient records  
+- Manage appointments  
+- Track treatment details  
+
+---
+
+### Patient Module
+- Register/Login  
+- Book appointments  
+- View prescriptions  
+- Track medical history  
+
+---
+
+## Application Flow
 
 
-* If username and password are invalid.
+User Login (Admin / Doctor / Patient)
+↓
+Dashboard Access
+↓
+Perform Operations
+↓
+Database Update
+↓
+Real-Time Data Management
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/login-2.jpg?raw=true.type" width="600" height="400">
 
-#### Menu
+---
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/menu.jpg?raw=true.type" width="600" height="600">
+## Project Structure
 
 
-#### Patient Registration form:
+HospitalManagementSystem/
+│
+├── static/
+│ ├── css/
+│ ├── js/
+│ └── images/
+│
+├── templates/
+│ ├── index.html
+│ ├── login.html
+│ ├── dashboard.html
+│ ├── patient.html
+│ ├── doctor.html
+│ └── admin.html
+│
+├── app.py
+├── models.py
+├── database.db
+├── requirements.txt
+└── README.md
 
-* Patient registration: Submit
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/pat-reg-1.jpg?raw=true.type" width="800" height="400">
+---
 
-* Patient registration: Update
+## Application Screenshots
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/pat-reg-2.jpg?raw=true.type" width="800" height="400">
+### Home Page
 
-* Patient registration: Search
+<p align="center">
+  <img src="screenshots/home.jpg" width="700"/>
+</p>
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/pat-reg-3.jpg?raw=true.type" width="800" height="400">
+---
 
-* Patient registration: Delete
+### Login Page
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/pat-reg-4.jpg?raw=true.type" width="800" height="400">
+<p align="center">
+  <img src="screenshots/login.jpg" width="700"/>
+</p>
 
-#### Room Allocation:
+---
 
-* Room Allocation: Submit
+### Dashboard
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/room-alloc-1.jpg?raw=true.type" width="800" height="400">
+<p align="center">
+  <img src="screenshots/dashboard.jpg" width="700"/>
+</p>
 
-* Room Allocation: Update
+---
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/room-alloc-2.jpg?raw=true.type" width="800" height="400">
+### Doctor Panel
 
-* Room Allocation: Room details
+<p align="center">
+  <img src="screenshots/doctor.jpg" width="700"/>
+</p>
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/room-alloc-3.jpg?raw=true.type" width="800" height="400">
+---
 
-#### Employee Registration: 
+### Patient Panel
 
-* Employee Registration: Save
+<p align="center">
+  <img src="screenshots/patient.jpg" width="700"/>
+</p>
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/emp-reg-1.jpg?raw=true.type" width="800" height="400">
+---
 
-* Employee Registration: Delete
+## Technologies Used
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/emp-reg-2.jpg?raw=true.type" width="800" height="400">
+### Backend
+- Python  
+- Flask / Django  
 
-#### Book Appointment:
+### Database
+- SQLite / MySQL  
 
-* Book Appointment: Save
+### Frontend
+- HTML  
+- CSS  
+- JavaScript  
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/book-app-1.jpg?raw=true.type" width="800" height="400">
+---
 
-* Book Appointment: Delete
+## Installation
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/book-app-2.jpg?raw=true.type" width="800" height="400">
+Clone repository:
 
-* Book Appointment: Search Appointments
+```bash
+git clone <your-repo-link>
+cd HospitalManagementSystem
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/book-app-3.jpg?raw=true.type" width="800" height="400">
+Create virtual environment:
 
-#### Patient Bill:
+python -m venv .venv
 
-* Patient Bill: Update Data
+Activate:
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/pat-bill-1.jpg?raw=true.type" width="800" height="400">
+.venv\Scripts\activate
 
-* Patient Bill: Update Discharge Date
+Install dependencies:
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/pat-bill-2.jpg?raw=true.type" width="800" height="400">
+pip install -r requirements.txt
+Run Application
+python app.py
 
-* Patient Bill: Generate Bill
+Open browser:
 
-<img src="https://github.com/gayathri1462/Hospital-Management-System/blob/main/Output%20images/pat-bill-3.jpg?raw=true.type" width="800" height="400">
+http://127.0.0.1:5000
+Key Features
+Multi-user login system
+Patient record management
+Appointment scheduling
+Doctor dashboard
+Admin control panel
+Secure data handling
+Future Improvements
+Add online payment system
+Integrate real-time notifications
+Cloud deployment
+AI-based diagnosis support
+Mobile app integration
+Disclaimer
+
+This project is developed for educational purposes only.
